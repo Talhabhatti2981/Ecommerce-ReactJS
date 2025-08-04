@@ -7,7 +7,6 @@ import { LuSendHorizontal } from "react-icons/lu";
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "../../Arrow";
 
-import qrCode from "../assets/img/Qr code.png";
 import playstore from "../assets/img/playstore.png";
 import appleLogo from "../assets/img/apple-logo.png";
 
@@ -32,6 +31,7 @@ const Footer = () => {
               <LuSendHorizontal className="absolute top-1/2 right-2 transform -translate-y-1/2 text-white cursor-pointer" />
             </div>
           </div>
+
           <div className="w-full md:w-auto mt-10">
             <h2 className="text-lg font-bold">Support</h2>
             <p className="text-md pt-6">
@@ -40,6 +40,7 @@ const Footer = () => {
             <Link to="/"><p className="text-md pt-4">exclusive@gmail.com</p></Link>
             <Link to="/"><p className="text-md pt-5">+88015-88888-9999</p></Link>
           </div>
+
           <div className="w-full md:w-auto mt-10">
             <h2 className="text-lg font-bold">Account</h2>
             <ul className="text-sm pt-7 space-y-4">
@@ -50,6 +51,7 @@ const Footer = () => {
               <Link to="/"><li>Shop</li></Link>
             </ul>
           </div>
+
           <div className="w-full md:w-auto mt-10">
             <h2 className="text-lg font-bold">Quick Link</h2>
             <ul className="text-sm mt-8 space-y-4">
@@ -59,32 +61,31 @@ const Footer = () => {
               <Link to="/"><li>Contact</li></Link>
             </ul>
           </div>
+
           <div className="w-full md:w-auto mt-10">
             <h2 className="text-lg font-bold">Download App</h2>
             <p className="text-[#7D7D7D] pt-8">Save $3 with App New User Only</p>
-            <div className="flex gap-3 mt-2">
-              <img src={qrCode} alt="QR Code" className="pt-2 max-w-full" />
-              <div>
-                <div className="border border-white h-[38px] mt-2 rounded-sm">
-                  <div className="flex items-center gap-2 bg-black text-white px-3 py-1 w-fit">
-                    <img src={playstore} alt="Play Store" className="w-5 h-5" />
-                    <div className="flex flex-col">
-                      <span className="text-[10px]">GET IT ON</span>
-                      <span className="text-sm font-semibold -mt-0.5">Google Play</span>
-                    </div>
+            <div className="mt-4">
+              <div className="border border-white h-[38px] mt-2 rounded-sm">
+                <div className="flex items-center gap-2 bg-black text-white px-3 py-1 w-fit">
+                  <img src={playstore} alt="Play Store" className="w-5 h-5" />
+                  <div className="flex flex-col">
+                    <span className="text-[10px]">GET IT ON</span>
+                    <span className="text-sm font-semibold -mt-0.5">Google Play</span>
                   </div>
                 </div>
-                <div className="border border-white h-[38px] mt-3 rounded-sm">
-                  <div className="flex items-center gap-2 bg-black text-white px-3 py-1 w-fit">
-                    <img src={appleLogo} alt="App Store" className="w-5 h-5" />
-                    <div className="flex flex-col">
-                      <span className="text-[10px]">Download on the</span>
-                      <span className="text-sm font-semibold -mt-0.5">App Store</span>
-                    </div>
+              </div>
+              <div className="border border-white h-[38px] mt-3 rounded-sm">
+                <div className="flex items-center gap-2 bg-black text-white px-3 py-1 w-fit">
+                  <img src={appleLogo} alt="App Store" className="w-5 h-5" />
+                  <div className="flex flex-col">
+                    <span className="text-[10px]">Download on the</span>
+                    <span className="text-sm font-semibold -mt-0.5">App Store</span>
                   </div>
                 </div>
               </div>
             </div>
+
             <div className="mt-5 flex gap-4 justify-center md:justify-start">
               <a href="#"><FaFacebookF /></a>
               <a href="#"><CiTwitter /></a>
