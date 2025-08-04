@@ -4,7 +4,6 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-// Image imports
 import phoneImg from "../assets/img/phone.png";
 import computerImg from "../assets/img/computer.png";
 import watchImg from "../assets/img/watch.png";
@@ -13,8 +12,6 @@ import headphoneImg from "../assets/img/head-phone.png";
 import gamepadImg from "../assets/img/gamepad.png";
 import leftArrow from "../assets/img/left.png";
 import rightArrow from "../assets/img/right.png";
-
-// Category data with imported images
 const categories = [
   { img: phoneImg, title: "Phones" },
   { img: computerImg, title: "Computers" },
@@ -45,8 +42,6 @@ const Category = () => {
             className="custom-next cursor-pointer rounded-full p-3 bg-[#f5f5f5] z-20 hover:bg-gray-300"
           />
         </div>
-
-        {/* Swiper */}
         <Swiper
           className="mt-6"
           modules={[Navigation]}

@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// ✅ Image Imports
 import appleLogo from "../assets/img/apple-logo.png";
 import heroImage from "../assets/img/hero-img (2).png";
 
